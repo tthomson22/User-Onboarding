@@ -25,7 +25,7 @@ export default function Form(props) {
                 <p>{errors.fruits}</p>
                 <p>{errors.terms}</p>
 
-                <label>Name: 
+                <label className='name'>Name: 
                     <input 
                         name='username'
                         type='text'
@@ -34,7 +34,7 @@ export default function Form(props) {
                     />
                 </label>
 
-                <label>Email: 
+                <label className='email'>Email: 
                     <input 
                         name='email'
                         type='email'
@@ -43,7 +43,7 @@ export default function Form(props) {
                     />
                 </label>
 
-                <label>Password: 
+                <label className='password'>Password: 
                     <input 
                         name='password'
                         type='password'
@@ -52,7 +52,7 @@ export default function Form(props) {
                     />
                 </label>
 
-                <label>Fruits: 
+                <label className='fruits'>Fruits: 
                     <select
                         name='fruits'
                         value={fruits}
@@ -66,7 +66,7 @@ export default function Form(props) {
                     </select>
                 </label>
                 
-                <label>Terms: 
+                <label className='terms'>Terms: 
                     <input 
                         name='terms'
                         type='checkbox'
@@ -76,6 +76,8 @@ export default function Form(props) {
                 </label>
 
                 <input
+                    className='submit'
+                    id='submitBtn'
                     type='submit'
                     value='Submit'
                 />
